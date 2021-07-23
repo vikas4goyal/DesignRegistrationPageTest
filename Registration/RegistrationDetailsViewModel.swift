@@ -23,6 +23,7 @@ class RegistrationDetailsViewModel: ObservableObject {
         if let validationError = validateData() {
             self.alertMessage = validationError
             self.showAlert = true
+            return
         }
         self.isLinkActive = true
     }
